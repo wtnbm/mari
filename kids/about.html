@@ -1,0 +1,501 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ひぐま幼稚園</title>
+<style type="text/css">	
+</style>
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script>
+
+//ハンバーガーメニュー
+$(function() {
+      var gnav = $('.gnav');
+      gnav.css('display','none');
+      $('.gnav-btn').on('click', function() {
+        gnav.slideToggle(500);
+        if ($(this).hasClass('is-open')) {
+          $(this).removeClass('is-open');
+        } else {
+          $(this).addClass('is-open');
+        }
+      });
+    });
+	
+
+	
+$(function(){
+//アコーディオン
+ $(".list-item").on("click", function() {
+  $("dd",this).slideToggle();
+ });
+});
+
+$(function(){
+ $(".more_past").on("click", function() {
+  $(".more_content").slideToggle();
+ });
+});
+	
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="img/favicon32.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicon180.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+<div class="outer">
+	
+<!--ここからヘッダー-->
+<header>
+ <div class="container">
+  <div class="item">
+   <h1>
+	<a href="index.html">
+	　<img src="img/logo_240_200.png" width="240" height="200" alt="ひぐま幼稚園"/>
+	</a>
+   </h1>
+  </div>
+  <div class="item">
+   <div class="header_copy">
+    <h2>たくさん遊んですくすく育つ<br class="">こころとからだの健やかな成長  </h2>
+   </div> 
+  </div>
+  <div class="item">
+   <img class="rainbow" src="img/rainbow.png" width="auto" height="250" alt=""/> 
+  </div>	 
+ </div>
+</header>
+<!--ここまでヘッダー-->
+
+<!--ここからPCナビ-->
+<div class="subnavi_outer">
+  <nav class="subnavi">
+   <ul>
+    <li><a href="document.html">各種書類</a></li>
+    <li><a href="about.html">アクセス</a></li>
+    <li><a href="tel:1234-56-7890">電話をかける</a></li>
+   </ul>
+  </nav>
+</div>
+<nav class="header_nav">
+  <ul>
+    <li><a href="index.html">おしらせ</a></li>
+    <li><a href="life.html">園での生活</a></li>
+    <li><a href="time.html">保育時間</a></li>
+    <li><a href="admission.html">入園案内</a></li>
+    <li><a href="about.html">園の概要</a></li>
+	<li><a href="question.html">よくある質問</a></li>
+ </ul>
+</nav>
+</div>	
+<!--ここまでナビ-->
+	
+	
+<!--ここからSPナビ-->
+<div class="nav-wrap">
+  <div class="sp_nav_title"><a href="index.html"><span class="text">ひぐま幼稚園</span></a>
+    <div class="gnav-btn icon-animation">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+  </div>
+  <nav>
+    <ul class="gnav">
+      <li><a href="index.html">おしらせ</a></li>
+      <li><a href="life.html">園での生活</a></li>
+      <li><a href="time.html">保育時間</a></li>
+      <li><a href="admission.html">入園案内</a></li>
+      <li><a href="question.html">よくある質問</a></li>
+      <li><a href="document.html">各種書類</a></li>
+      <li><a href="about.html">アクセス・園の概要</a></li>
+      <li><a href="tel:1234-56-7890">電話をかける</a></li>
+    </ul>
+  </nav>
+</div>
+<!--ここまでSPナビ-->
+	
+	
+	
+	
+<!--ここからメイン-->
+	
+<main>
+<div class="outer">
+<p class="line"><img src="img/line.png" width="1185" height="47" alt=""/></p>
+<!--ここまで共通-->	
+
+<section class="access" id="access">
+    <h3>アクセス</h3>
+    <div class="acsees">
+      <div class="ad_bus">
+  <div class="ad">
+    <h4>住所・電話番号</h4>
+    <p>〒123-4567</p>
+    <p>宮城県柴田郡柴田町一目千本桜町3-9</p>
+    <p>123-456-7890</p>
+    <p>(受付時間：平日8：30～17：30)</p>
+  </div>
+        <div class="bus">
+          <h4>バスルート</h4>
+          <p>前年度のルート［さくら町1丁目→ゆず町2丁目→菊人形通り→白石川公園→郷土資料館前→観音様通り］<br>
+          ルートのご要望があればご相談下さい。</p>
+        </div>
+      </div>
+      
+      <div class="map">
+        <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5132.050781336891!2d140.7681779601852!3d38.071488474491794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8a3e6c998f3333%3A0x8f4d12daa8103259!2z54aK6YeO5bm856ia5ZyS!5e0!3m2!1sja!2sjp!4v1585913931214!5m2!1sja!2sjp" width="350" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>
+      </div>
+    </div>
+</section>
+	
+  <p class="line"><img src="img/line2.png" width="1185" height="47" alt=""/></p>
+	
+<section class="history" id="history">
+    <h3>沿革</h3>
+         <dl>
+	      <dt>1993年</dt><dd>ひぐま幼稚園設立</dd>
+	      <dt>1995年</dt><dd>給食の開始</dd>
+         </dl>
+</section>
+<p class="line"><img src="img/line2.png" width="1185" height="47" alt=""/></p>
+
+<section class="facility" id="facility">
+    <h3>施設概要</h3>
+        <dl>
+	      <dt>園名</dt><dd>ひぐま幼稚園</dd>
+	      <dt>設置主体・運営</dt><dd>ひぐま幼稚園</dd>
+	      <dt>設立年月</dt>
+	      <dd>1993年4月1日</dd>
+	      <dt>代表者</dt><dd>園長　森野熊三</dd>
+	      <dt>事業内容</dt>
+	      <dd>延長保育、一時預かり、地域子育て支援事業、育児相談、学童保育(夏休み)</dd>
+	      <dt>所在地</dt>
+	      <dd>〒123-4567宮城県柴田郡柴田町一目千本桜町3-9</dd>
+          <dt>連絡先</dt>
+          <dd>123-456-7890</dd>
+	      <dt>園児定員数</dt><dd>80名</dd>
+	      <dt>入園対象年齢</dt><dd>2才～5才児(就学前まで)</dd>
+	  	  <dt>規模</dt><dd>敷地面積：1000㎡/建築面積：400㎡/床面積：800㎡/屋外遊戯場：400㎡</dd>
+	      <dt>職員構成</dt><dd>園長、幼稚園教諭、栄養士、調理師、事務員</dd>
+        </dl>
+</section>
+	
+	
+	
+	
+	
+	
+	
+	
+<!--ここから共通-->
+<p class="line"><img src="img/line.png" width="1185" height="47" alt=""/></p>
+ </div>
+</main>
+<!--ここまでメイン-->
+	
+	
+	
+	
+	
+<!--ここからフッター--> 
+<footer>
+<div class="container">
+<!--ここからフッター＿ナビ(960)-->
+<div class="footer_nav_960">
+<div class="footer_nav_all">
+	
+  <div class="footer_nav">
+    <p class="title"><a href="index.html">HOME</a></p>
+    <nav>
+      <ul>
+       <li><a href="index.html#news">お知らせ</a></li>
+       <li><a href="index.html#philosophy">保育理念</a></li>
+       <li><a href="index.html#greeting">あいさつ</a></li>
+      </ul>
+    </nav>
+  </div>
+   
+  <div class="footer_nav">
+    <p class="title"><a href="life.html">園での生活</a></p>
+    <nav>
+      <ul>
+       <li><a href="life.html#day">園の一日</a></li>
+       <li><a href="life.html#lunch">給食</a></li>
+	   <li><a href="life.html#year">年間行事</a></li>
+      </ul>
+    </nav>
+  </div>
+	  
+  <div class="footer_nav">
+    <p class="title"><a href="time.html">保育時間</a></p>
+    <nav>
+     <ul>
+	  <li><a href="time.html#normal">通常保育</a></li>
+      <li><a href="time.html#extention">預かり保育</a></li>
+     </ul>
+    </nav>
+  </div>
+	
+  <div class="footer_nav">
+    <p class="title"><a href="admission.html">入園案内</a></p>
+    <nav>
+     <ul>
+      <li><a href="admission.html#admission">入園のご案内</a></li>
+      <li><a href="admission.html#visit">見学お申込み</a></li>
+     </ul>
+    </nav>
+  </div>
+    
+  <div class="footer_nav">
+    <p class="title"><a href="about.html">園の概要</a></p>
+    <nav>
+     <ul>
+      <li><a href="about.html#access">アクセス</a></li>
+      <li><a href="about.html#history">園の歴史</a></li>
+      <li><a href="about.html#facility">施設紹介</a></li>	
+     </ul>
+    </nav>
+  </div>
+
+  <div class="footer_nav">
+    <p class="title"><a href="#">その他</a></p>
+    <nav>
+     <ul>
+      <li><a href="question.html#question">よくある質問</a></li>
+      <li><a href="contact.html">お問い合わせ</a></li>
+      <li><a href="document.html">各種書類</a></li>	
+     </ul>
+    </nav>
+  </div>
+</div>
+</div>
+<!--ここまでフッター＿ナビ(960)-->
+	
+<!--ここからフッター＿ナビ(700)
+<!--
+<div class="footer_nav_all">
+
+
+<div class="footer_nav_700">
+  <div class="container">
+	  	<div class="item">
+  <div class="footer_nav">
+    <p class="title"><a href="index.html">HOME</a></p>
+    <nav>
+      <ul>
+       <li><a href="index.html#news">お知らせ</a></li>
+       <li><a href="index.html#philosophy">保育理念</a></li>
+       <li><a href="index.html#greeting">あいさつ</a></li>
+      </ul>
+    </nav>
+  </div>
+   
+  <div class="footer_nav">
+    <p class="title"><a href="life.html">園での生活</a></p>
+    <nav>
+      <ul>
+       <li><a href="life.html#day">園の一日</a></li>
+       <li><a href="life.html#lunch">給食</a></li>
+	   <li><a href="life.html#year">年間行事</a></li>
+      </ul>
+    </nav>
+  </div>
+	  
+  <div class="footer_nav">
+    <p class="title"><a href="time.html">保育時間</a></p>
+    <nav>
+     <ul>
+	  <li><a href="time.html#normal">通常保育</a></li>
+      <li><a href="time.html#extention">預かり保育</a></li>
+     </ul>
+    </nav>
+  </div>
+</div>
+-->
+<!--item-->
+
+	
+<!--
+<div class="footer_nav_700">
+ <div class="item">
+  <div class="footer_nav">
+    <p class="title"><a href="admission.html">入園案内</a></p>
+    <nav>
+     <ul>
+      <li><a href="admission.html#admission">入園のご案内</a></li>
+      <li><a href="admission.html#visit">見学お申込み</a></li>
+     </ul>
+    </nav>
+  </div>
+    
+  <div class="footer_nav">
+    <p class="title"><a href="about.html">園の概要</a></p>
+    <nav>
+     <ul>
+      <li><a href="about.html#access">アクセス</a></li>
+      <li><a href="about.html#history">園の歴史</a></li>
+      <li><a href="about.html#facility">施設紹介</a></li>	
+     </ul>
+    </nav>
+  </div>
+
+  <div class="footer_nav">
+    <p class="title"><a href="#">その他</a></p>
+    <nav>
+     <ul>
+      <li><a href="question.html#question">よくある質問</a></li>
+      <li><a href="contact.html">お問い合わせ</a></li>
+      <li><a href="document.html">各種書類</a></li>	
+     </ul>
+    </nav>
+  </div>
+</div>
+-->
+<!--item-->
+	<!--
+<div class="item">
+<!--ここから署名--><!--
+<div class="item signature700">
+ <div class="signature">
+ <img src="img/signature.png" width="220" height="auto" alt=""/>
+  <div class="text">
+    <p class="ad">
+	 <a href="about.html#access">
+	  <span class="ad1">〒123-4567</span><br>
+      <span class="ad2">宮城県柴田郡柴田町</span><br>
+	  <span class="ad2">一目千本桜町3-9</span>
+	 </a>
+	</p>
+    <p class="tel">
+	 <a href="tel:1234-56-7890">TEL 1234-56-7890<br><span class="recept">(平日8：30～17：30)</span></a></p>
+	<p class="copy">©2020higumaYOUCHIEN.<br><a href="#">個人情報保護方針</a></p>
+  </div>
+ </div>
+ </div>-->
+<!--ここまで署名-->
+<!--</div><!--item-->		
+<!--</div><!--container-->
+<!--</div><!--footer_nav_700-->
+<!--</div><!--footer_nav_all-->
+<!--ここからフッター＿ナビ(700)-->
+<!--ここから署名-->
+<div class="signaturepc">
+<div class="item">
+ <div class="signature ">
+ <img src="img/signature.png" width="220" height="auto" alt=""/>
+  <div class="text">
+    <p class="ad">
+	 <a href="about.html#access">
+	  <span class="ad1">〒123-4567</span><br>
+      <span class="ad2">宮城県柴田郡柴田町</span><br>
+	  <span class="ad2">一目千本桜町3-9</span>
+	 </a>
+	</p>
+    <p class="tel">
+	 <a href="tel:1234-56-7890">TEL 1234-56-7890<br><span class="recept">(平日8：30～17：30)</span></a></p>
+	<p class="copy">©2020higumaYOUCHIEN.<br><a href="#">個人情報保護方針</a></p>
+  </div>
+ </div>
+ </div>
+ </div>
+<!--ここまで署名-->
+	
+<!--ここからフッター＿ナビ(pc)-->
+<div class="footer_nav_pc">
+<div class="footer_nav_all">
+
+  <div class="footer_nav">
+    <p class="title"><a href="index.html">HOME</a></p>
+    <nav>
+      <ul>
+       <li><a href="index.html#news">お知らせ</a></li>
+       <li><a href="index.html#philosophy">保育理念</a></li>
+       <li><a href="index.html#greeting">あいさつ</a></li>
+      </ul>
+    </nav>
+  </div>
+   
+  <div class="footer_nav">
+    <p class="title"><a href="life.html">園での生活</a></p>
+    <nav>
+      <ul>
+       <li><a href="life.html#day">園の一日</a></li>
+       <li><a href="life.html#lunch">給食</a></li>
+	   <li><a href="life.html#year">年間行事</a></li>
+      </ul>
+    </nav>
+  </div>
+	  
+  <div class="footer_nav">
+    <p class="title"><a href="time.html">保育時間</a></p>
+    <nav>
+     <ul>
+	  <li><a href="time.html#normal">通常保育</a></li>
+      <li><a href="time.html#extention">預かり保育</a></li>
+     </ul>
+    </nav>
+  </div>
+
+  <div class="footer_nav">
+    <p class="title"><a href="admission.html">入園案内</a></p>
+    <nav>
+     <ul>
+      <li><a href="admission.html#admission">入園のご案内</a></li>
+      <li><a href="admission.html#visit">見学お申込み</a></li>
+     </ul>
+    </nav>
+  </div>
+    
+  <div class="footer_nav">
+    <p class="title"><a href="about.html">園の概要</a></p>
+    <nav>
+     <ul>
+      <li><a href="about.html#access">アクセス</a></li>
+      <li><a href="about.html#history">園の歴史</a></li>
+      <li><a href="about.html#facility">施設紹介</a></li>	
+     </ul>
+    </nav>
+  </div>
+
+  <div class="footer_nav">
+    <p class="title"><a href="#">その他</a></p>
+    <nav>
+     <ul>
+      <li><a href="question.html#question">よくある質問</a></li>
+      <li><a href="contact.html">お問い合わせ</a></li>
+      <li><a href="document.html">各種書類</a></li>	
+     </ul>
+    </nav>
+  </div>
+</div>
+</div>
+<!--ここまでフッター＿ナビ(pc)-->
+　 </div>
+　</footer>
+ </body>
+</html>

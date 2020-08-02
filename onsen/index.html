@@ -1,0 +1,316 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>杜の都蔵王温泉</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="img/favicon32.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicon180.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+body ,p,h1,h2,h3,ul,li{
+    margin: 0px;
+    padding: 0px;
+    font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", serif;
+    color: #555;
+}
+body {
+}
+#all {
+    margin: 0 auto;
+    width: 1280px;
+    display: block;
+}
+header .inner {
+    width: 280px;
+    float: left;
+}
+header p {
+    float: left;
+}
+header nav {
+    width: 280px;
+    margin-top: 100px;
+    padding-top: 10px;
+    margin-left: 5px;
+}
+ul {
+    text-decoration: none;
+    list-style-type: none;
+}
+header nav a {
+    display: block;
+    padding: 20px;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+header nav a:link {
+     color: #000000;
+}
+header nav a:visited {
+     color: #000000;
+}
+header nav a:hover {
+     color: #bbb;
+}
+header nav a:active {
+     color: #000000;
+}
+h1 {
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.intro {
+    overflow: hidden;
+}
+.maintext {
+    margin-left: 280px;
+    font-size: 1.5em;
+    line-height: 3em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.rtn {
+    position: relative;
+
+}
+.rtn_img   {
+    position: relative;
+    margin-left: 505px;
+    margin-top: 52px;
+}
+.rtn_moji {
+    position: absolute;
+    top: -260px;
+    right: 50px;
+}
+.uty {
+    position: relative;
+    width: 1280px;
+}
+.uty_img { 
+    margin-left: 106px;
+    margin-top: 55px;
+    float: left;
+    margin-bottom: 100px;
+}
+.uty_moji {
+    position: absolute;
+    top: -200px;
+    left:170px;
+}
+.gs_kn {
+    width: 512px;
+    float: left;
+    overflow: hidden;
+    height: 374px;
+    margin-top: 55px;
+    padding-top: 30px;
+}
+.gensen {
+    margin-left: 80px;
+    margin-bottom: 130px;
+}
+.kounou {
+    text-align: right;
+    padding-right: 120px;
+}
+.line {
+    margin: 90px auto;
+    width: 1100px;
+    height: 1px;
+    background-color: #4d4d4d;
+    display: block;
+}
+.info {
+    margin-right: auto;
+    margin-left: auto;
+    width: 660px;
+    overflow: hidden;
+}
+.info_content {
+    overflow: hidden;
+    margin-top: 50px;
+}
+.info_content_text {
+    float: left;
+    width: 330px;
+    margin-left: 50px;
+}
+.info h2 {
+    border: 1px solid #666;
+    text-align: center;
+    width: 263px;
+    float: left;
+}
+footer {
+    clear: both;
+    text-align: center;
+    font-size: small;
+    font-weight: lighter;
+    background-color: #4d4d4d;
+    height: 85px;
+    width: 100%;
+    margin:90px 0 0 0; 
+}
+footer p {
+    color: #fff;
+    font-weight: lighter;
+    font-size: small;
+    padding-top: 30px;
+    background-color: 4d4d4d;
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.smoothscroll.js"></script>
+<script>
+$(function(){
+    var effect_pos = 300; // 画面下からどの位置でフェードさせるか(px)
+    var effect_move = 50; // どのぐらい要素を動かすか(px)
+    var effect_time = 800; // エフェクトの時間(ms) 1秒なら1000
+
+    // フェードする前のcssを定義
+    $('.scroll-fade').css({
+        opacity: 0,
+        transform: 'translateY('+ effect_move +'px)',
+        transition: effect_time + 'ms'
+    });
+
+    // スクロールまたはロードするたびに実行
+    $(window).on('scroll load', function(){
+        var scroll_top = $(this).scrollTop();
+        var scroll_btm = scroll_top + $(this).height();
+        effect_pos = scroll_btm - effect_pos;
+
+        // effect_posがthis_posを超えたとき、エフェクトが発動
+        $('.scroll-fade').each( function() {
+            var this_pos = $(this).offset().top;
+            if ( effect_pos > this_pos ) {
+                $(this).css({
+                    opacity: 1,
+                    transform: 'translateY(0)'
+                });
+            }
+        });
+    });
+});
+</script>
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+<div id="all">
+  <header>
+    <div class="inner">
+      <h1><img src="img/logo.png" width="143" height="103" alt=""/></h1>
+      <nav class="nav">
+        <ul>
+          <li><a href="#">蔵王温泉郷</a></li>
+          <li><a href="#">観光施設</a></li>
+          <li><a href="#">旅館</a></li>
+          <li><a href="#">お食事</a></li>
+          <li><a href="#">イベント</a></li>
+        </ul>
+      </nav>
+    </div>
+    <img src="img/main_w693h442.png" width="963" height="642" alt=""/></header>
+	
+  <main>
+    <section class="intro">
+		
+      <div class="maintext">
+        <p>蔵王山麓の豊かな大地のめぐみが育んだ<br>
+        <p>杜の都蔵王温泉では、<br>
+        <p> 硫黄泉 と 炭酸塩泉 の2種類の温泉が楽しめます。<br>
+        <p>日帰り温泉もございます。<br>
+        <p>どうぞ ごゆっくりと、おくつろぎください。</p>
+      </div>
+     
+	  <div class="rtn">
+        <p class="rtn_img"><img src="img/rtn_w684h462.png" width="684" height="462" alt=""/></p>
+        <p class="rtn_moji"><img src="img/rtn.png" width="auto" height="500" alt=""/></p>
+      </div>
+	  <div class="uty">
+        <p class="uty_img"><img src="img/uty_w662h374.png" width="662" height="374" alt=""/></p>
+        <p class="uty_moji"><img src="img/uty.png" width="auto" height="500" alt=""/></p>
+      <div class="gs_kn">
+  <div class="gensen">
+    <h2>源泉名</h2>
+    <p>露天：硫黄泉<br>
+      内湯：炭酸水素塩泉</p>
+  </div>
+        <div class="kounou">
+          <h2>主な効能</h2>
+          <p>肩こり、腰痛、ねんざ、うちみ、血行促進、<br>
+            高血圧、動脈硬化、肌荒れ、きりきず、<br>
+            すりきず、しもやけ、美肌作用、冷え性、<br>
+            神経痛、関節痛</p>
+        </div>
+      </div>
+		     </div>
+    </section>
+  <div class="line"></div>	  
+<section class="info">
+	
+  <div class="info_content">
+  <h2>営業時間</h2>
+        <p class="info_content_text">朝6：00～24：00<br> ※23：00で受付終了</p></div>
+		
+  <div class="info_content">
+  <h2>定休日</h2>
+        <p class="info_content_text">3月・6月・9月・12月の第2木曜日</p></div>
+	 	
+  <div class="info_content">
+  <h2>料金</h2>
+        <div class="info_content_text">
+    <p>【入浴料】<br>
+        大人(中学生以上)			：470 円<br>
+        子ども(小学生以下)			：180 円<br>
+        未就学児					： 80 円</p>
+    <p>【タオル】<br>
+        販売　　 ― フェイスタオル	：470 円<br>
+        レンタル ― バスタオル　　	：180 円</p> </div></div>
+		
+  <div class="info_content">
+  <h2>所在地</h2>
+        <p class="info_content_text">〒990-2301 山形県山形市蔵王温泉<br>白石蔵王駅から車で40分</p></div>
+		
+</section>
+	  
+	  
+  </main>
+	</div>
+  <footer>
+    <p>サイトマップ｜プライバシーポリシー｜免責事項<br>蔵王温泉協会観光委員会Copyright ZAO onsen group AllRights Reserved</p>
+  </footer>
+
+</body>
+</html>

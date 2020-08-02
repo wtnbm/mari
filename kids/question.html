@@ -1,0 +1,620 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ひぐま幼稚園</title>
+<style type="text/css">	
+</style>
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script>
+
+//ハンバーガーメニュー
+$(function() {
+      var gnav = $('.gnav');
+      gnav.css('display','none');
+      $('.gnav-btn').on('click', function() {
+        gnav.slideToggle(500);
+        if ($(this).hasClass('is-open')) {
+          $(this).removeClass('is-open');
+        } else {
+          $(this).addClass('is-open');
+        }
+      });
+    });
+	
+
+	
+$(function(){
+//アコーディオン
+ $(".list-item").on("click", function() {
+  $("dd",this).slideToggle();
+ });
+});
+
+$(function(){
+ $(".more_past").on("click", function() {
+  $(".more_content").slideToggle();
+ });
+});
+	
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="img/favicon32.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicon180.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+<div class="outer">
+	
+<!--ここからヘッダー-->
+<header>
+ <div class="container">
+  <div class="item">
+   <h1>
+	<a href="index.html">
+	　<img src="img/logo_240_200.png" width="240" height="200" alt="ひぐま幼稚園"/>
+	</a>
+   </h1>
+  </div>
+  <div class="item">
+   <div class="header_copy">
+    <h2>たくさん遊んですくすく育つ<br class="">こころとからだの健やかな成長  </h2>
+   </div> 
+  </div>
+  <div class="item">
+   <img class="rainbow" src="img/rainbow.png" width="auto" height="250" alt=""/> 
+  </div>	 
+ </div>
+</header>
+<!--ここまでヘッダー-->
+
+<!--ここからPCナビ-->
+<div class="subnavi_outer">
+  <nav class="subnavi">
+   <ul>
+    <li><a href="document.html">各種書類</a></li>
+    <li><a href="about.html">アクセス</a></li>
+    <li><a href="tel:1234-56-7890">電話をかける</a></li>
+   </ul>
+  </nav>
+</div>
+<nav class="header_nav">
+  <ul>
+    <li><a href="index.html">おしらせ</a></li>
+    <li><a href="life.html">園での生活</a></li>
+    <li><a href="time.html">保育時間</a></li>
+    <li><a href="admission.html">入園案内</a></li>
+    <li><a href="about.html">園の概要</a></li>
+	<li><a href="question.html">よくある質問</a></li>
+ </ul>
+</nav>
+</div>	
+<!--ここまでナビ-->
+	
+	
+<!--ここからSPナビ-->
+<div class="nav-wrap">
+  <div class="sp_nav_title"><a href="index.html"><span class="text">ひぐま幼稚園</span></a>
+    <div class="gnav-btn icon-animation">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+  </div>
+  <nav>
+    <ul class="gnav">
+      <li><a href="index.html">おしらせ</a></li>
+      <li><a href="life.html">園での生活</a></li>
+      <li><a href="time.html">保育時間</a></li>
+      <li><a href="admission.html">入園案内</a></li>
+      <li><a href="question.html">よくある質問</a></li>
+      <li><a href="document.html">各種書類</a></li>
+      <li><a href="about.html">アクセス・園の概要</a></li>
+      <li><a href="tel:1234-56-7890">電話をかける</a></li>
+    </ul>
+  </nav>
+</div>
+<!--ここまでSPナビ-->
+	
+	
+	
+	
+<!--ここからメイン-->
+	
+<main>
+<div class="outer">
+<p class="line"><img src="img/line.png" width="1185" height="47" alt=""/></p>
+<!--ここまで共通-->	
+<section class="question" id="question">
+ 
+	
+<div class="list_deco">
+ <h3>入園について</h3>
+  <dl>
+   <div class="list-item">
+      <dt class="title"><img src="img/kinw_30h25.png" alt="" id="Image1" onMouseOver="MM_swapImage('Image1','','img/ao_w30h25.png',1)" onMouseOut="MM_swapImgRestore()"><h4>何歳から入園できますか？</h4>
+	</dt>
+	<dd>
+	 <div class="open">
+	   <p>２歳のお誕生日から入園資格があります。<br>
+	   </p>
+	  <p class="more"><a href="admission.html">入園のご案内へ</a>
+	  </p>
+	 </div>
+	</dd>
+   </div>
+	 
+	  
+   <div class="list-item">
+      <dt class="title"><img src="img/kinw_30h25.png" alt="" id="Image2" onMouseOver="MM_swapImage('Image2','','img/ao_w30h25.png',1)" onMouseOut="MM_swapImgRestore()"><h4>園児の募集はいつから始まりますか？</h4>
+	</dt>
+	<dd>
+	 <div class="open">
+	   <p>9月から始まります。入園見学会で、願書をお渡しします。 </p>
+	  <p class="more"><a href="ringo.html" target="_blank">入園のご案内へ</a>
+	  </p>
+	 </div>
+	</dd>
+   </div>
+	  
+	<div class="list-item">
+      <dt class="title"><img src="img/kinw_30h25.png" alt="" id="Image3" onMouseOver="MM_swapImage('Image3','','img/ao_w30h25.png',1)" onMouseOut="MM_swapImgRestore()"><h4>引っ越してきました。途中入園できますか？</h4>
+	</dt>
+	<dd>
+	 <div class="open">
+	   <p>年度途中の入園も可能です。園にお問い合わせください。 </p>
+	  <p class="more"><a href="ringo.html" target="_blank">入園のご案内へ</a>
+	  </p>
+	 </div>
+	</dd>
+   </div>
+	  
+	   <div class="list-item">
+      <dt class="title"><img src="img/kinw_30h25.png" alt="" id="Image4" onMouseOver="MM_swapImage('Image4','','img/ao_w30h25.png',1)" onMouseOut="MM_swapImgRestore()"><h4>制服はありますか？</h4>
+	</dt>
+	<dd>
+	 <div class="open">
+	   <p>あります。詳しくは、入園説明会でご説明いたします。 </p>
+	 </div>
+	</dd>
+   </div>
+	 
+	   <div class="list-item">
+      <dt class="title"><img src="img/kinw_30h25.png" alt="" id="Image5" onMouseOver="MM_swapImage('Image5','','img/ao_w30h25.png',1)" onMouseOut="MM_swapImgRestore()"><h4>お弁当袋や手提げ袋などは手作りですか？</h4>
+	</dt>
+	<dd>
+	 <div class="open">
+	   <p>手作りでも市販品でも差し支えありません。サイズ、種類などの詳細は入園説明会で詳しくお知らせします。<br>
+	   </p>
+	 </div>
+	</dd>
+   </div>
+	  
+	  
+    </dl>
+ </div> 	
+
+	
+<div class="list_deco">
+ <h3>健康・安全について</h3>
+  <dl>
+   <div class="list-item">
+      <dt class="title"><img src="img/kinw_30h25.png" alt="" id="Image6" onMouseOver="MM_swapImage('Image6','','img/ao_w30h25.png',1)" onMouseOut="MM_swapImgRestore()"><h4>通園時間に制限はありますか？</h4>
+	</dt>
+	<dd>
+	 <div class="open">
+	   <p>特にありません。お子様に無理のない範囲でご判断ください。</p>
+	 </div>
+	</dd>
+   </div>
+	 
+	<div class="list-item">
+      <dt class="title"><img src="img/kinw_30h25.png" alt="" id="Image7" onMouseOver="MM_swapImage('Image7','','img/ao_w30h25.png',1)" onMouseOut="MM_swapImgRestore()"><h4>幼稚園で怪我をした時、発熱の時は？</h4>
+	</dt>
+	<dd>
+	 <div class="open">
+	   <p> 擦り傷や軽い打撲等緊急を要しない怪我は園で応急処置をし、帰宅時または帰宅後にご連絡差しあげます。
+発熱時は緊急時連絡先としてお知らせいただいている方へご連絡しお迎えをお願いしています。
+大きな怪我は緊急度に応じて、学園の看護師に判断を仰ぎ、ケースによっては速やかに病院に連れて行く措置をとり、同時に緊急時連絡先にご連絡します。</p>
+	 </div>
+	</dd>
+   </div>
+	  
+	  
+	<div class="list-item">
+      <dt class="title br_610_top"><img src="img/kinw_30h25.png" alt="" id="Image8" onMouseOver="MM_swapImage('Image8','','img/ao_w30h25.png',1)" onMouseOut="MM_swapImgRestore()"><h4>給食の食物アレルギー対応は<br class="br_610">どのようになっていますか？</h4>
+	</dt>
+	<dd>
+	 <div class="open">
+	   <p>給食は週2回、選択希望制で給食を提供しています。給食は外部搬入しており、食への安全、誤配を未然に防ぐうえで、化学調味料無添加、乳卵アレルギー対応食を提供しています。おやつなどを提供する場合は、ご家庭と相談して差し替えをするようにしています。</p>
+	 </div>
+	</dd>
+   </div>
+	  
+	   <div class="list-item">
+      <dt class="title br_610_top"><img src="img/kinw_30h25.png" alt="" id="Image9" onMouseOver="MM_swapImage('Image9','','img/ao_w30h25.png',1)" onMouseOut="MM_swapImgRestore()"><h4>幼稚園のセキュリティーは<br class="br_610">どのようになっていますか？</h4>
+	</dt>
+	<dd>
+	 <div class="open">
+	   <p>玄関は常時施錠しています。外来者はインターホンで確認してから開錠しています。</p>
+	 </div>
+	</dd>
+   </div>
+	 
+	 
+	  
+    </dl>
+ </div> 	
+
+
+	<div class="list_deco">
+ <h3>その他</h3>
+  <dl>
+
+	   <div class="list-item">
+      <dt class="title"><img src="img/kinw_30h25.png" alt="" id="Image10" onMouseOver="MM_swapImage('Image10','','img/ao_w30h25.png',1)" onMouseOut="MM_swapImgRestore()"><h4>土曜日に登園することはありますか？</h4>
+	</dt>
+	<dd>
+
+	 <div class="open">
+	   <p>年に数回土曜日や休日に行事などが入ります。 </p>
+	 </div>
+	</dd>
+   </div>
+	 
+	   <div class="list-item">
+      <dt class="title"><img src="img/kinw_30h25.png" alt="" id="Image11" onMouseOver="MM_swapImage('Image11','','img/ao_w30h25.png',1)" onMouseOut="MM_swapImgRestore()"><h4>父母参加の行事はどれくらいありますか。</h4>
+	</dt>
+	<dd>
+	 <div class="open">
+	   <p>毎年次の行事を開催しています。保護者参加の行事と任意の行事があります。<br>
+
+4月：進級式、入園式、春の親子遠足<br>
+7月：夕涼み会<br>
+9月：こども祭り（バザー）<br>
+10月：運動会<br>
+11月：親子ふれあいの会<br>
+12月：クリスマス礼拝<br>
+3月：生活発表会、卒園式、修了式<br>
+お子さまの生まれ月：誕生会<br>
+
+この他、以下の行事などが開催されます。（参加任意）<br>
+子育て支援講演会（年間3回程度）<br>
+秋の芸術鑑賞会（11月）<br>
+母親のための講習会<br>
+クラスの親睦会<br>
+父親の会主催交流会</p>
+	 </div>
+	</dd>
+   </div>
+	  
+	  
+    </dl>
+ </div> 	
+
+<div class="height20"></div>
+	
+	
+	
+	
+	
+<div class="height20"></div>   
+</section>
+	
+	
+	
+	
+	
+	
+	
+	
+<!--ここから共通-->
+<p class="line"><img src="img/line.png" width="1185" height="47" alt=""/></p>
+ </div>
+</main>
+<!--ここまでメイン-->
+	
+	
+	
+	
+	
+<!--ここからフッター--> 
+<footer>
+<div class="container">
+<!--ここからフッター＿ナビ(960)-->
+<div class="footer_nav_960">
+<div class="footer_nav_all">
+	
+  <div class="footer_nav">
+    <p class="title"><a href="index.html">HOME</a></p>
+    <nav>
+      <ul>
+       <li><a href="index.html#news">お知らせ</a></li>
+       <li><a href="index.html#philosophy">保育理念</a></li>
+       <li><a href="index.html#greeting">あいさつ</a></li>
+      </ul>
+    </nav>
+  </div>
+   
+  <div class="footer_nav">
+    <p class="title"><a href="life.html">園での生活</a></p>
+    <nav>
+      <ul>
+       <li><a href="life.html#day">園の一日</a></li>
+       <li><a href="life.html#lunch">給食</a></li>
+	   <li><a href="life.html#year">年間行事</a></li>
+      </ul>
+    </nav>
+  </div>
+	  
+  <div class="footer_nav">
+    <p class="title"><a href="time.html">保育時間</a></p>
+    <nav>
+     <ul>
+	  <li><a href="time.html#normal">通常保育</a></li>
+      <li><a href="time.html#extention">預かり保育</a></li>
+     </ul>
+    </nav>
+  </div>
+	
+  <div class="footer_nav">
+    <p class="title"><a href="admission.html">入園案内</a></p>
+    <nav>
+     <ul>
+      <li><a href="admission.html#admission">入園のご案内</a></li>
+      <li><a href="admission.html#visit">見学お申込み</a></li>
+     </ul>
+    </nav>
+  </div>
+    
+  <div class="footer_nav">
+    <p class="title"><a href="about.html">園の概要</a></p>
+    <nav>
+     <ul>
+      <li><a href="about.html#access">アクセス</a></li>
+      <li><a href="about.html#history">園の歴史</a></li>
+      <li><a href="about.html#facility">施設紹介</a></li>	
+     </ul>
+    </nav>
+  </div>
+
+  <div class="footer_nav">
+    <p class="title"><a href="#">その他</a></p>
+    <nav>
+     <ul>
+      <li><a href="question.html#question">よくある質問</a></li>
+      <li><a href="contact.html">お問い合わせ</a></li>
+      <li><a href="document.html">各種書類</a></li>	
+     </ul>
+    </nav>
+  </div>
+</div>
+</div>
+<!--ここまでフッター＿ナビ(960)-->
+	
+<!--ここからフッター＿ナビ(700)
+<!--
+<div class="footer_nav_all">
+
+
+<div class="footer_nav_700">
+  <div class="container">
+	  	<div class="item">
+  <div class="footer_nav">
+    <p class="title"><a href="index.html">HOME</a></p>
+    <nav>
+      <ul>
+       <li><a href="index.html#news">お知らせ</a></li>
+       <li><a href="index.html#philosophy">保育理念</a></li>
+       <li><a href="index.html#greeting">あいさつ</a></li>
+      </ul>
+    </nav>
+  </div>
+   
+  <div class="footer_nav">
+    <p class="title"><a href="life.html">園での生活</a></p>
+    <nav>
+      <ul>
+       <li><a href="life.html#day">園の一日</a></li>
+       <li><a href="life.html#lunch">給食</a></li>
+	   <li><a href="life.html#year">年間行事</a></li>
+      </ul>
+    </nav>
+  </div>
+	  
+  <div class="footer_nav">
+    <p class="title"><a href="time.html">保育時間</a></p>
+    <nav>
+     <ul>
+	  <li><a href="time.html#normal">通常保育</a></li>
+      <li><a href="time.html#extention">預かり保育</a></li>
+     </ul>
+    </nav>
+  </div>
+</div>
+-->
+<!--item-->
+
+	
+<!--
+<div class="footer_nav_700">
+ <div class="item">
+  <div class="footer_nav">
+    <p class="title"><a href="admission.html">入園案内</a></p>
+    <nav>
+     <ul>
+      <li><a href="admission.html#admission">入園のご案内</a></li>
+      <li><a href="admission.html#visit">見学お申込み</a></li>
+     </ul>
+    </nav>
+  </div>
+    
+  <div class="footer_nav">
+    <p class="title"><a href="about.html">園の概要</a></p>
+    <nav>
+     <ul>
+      <li><a href="about.html#access">アクセス</a></li>
+      <li><a href="about.html#history">園の歴史</a></li>
+      <li><a href="about.html#facility">施設紹介</a></li>	
+     </ul>
+    </nav>
+  </div>
+
+  <div class="footer_nav">
+    <p class="title"><a href="#">その他</a></p>
+    <nav>
+     <ul>
+      <li><a href="question.html#question">よくある質問</a></li>
+      <li><a href="contact.html">お問い合わせ</a></li>
+      <li><a href="document.html">各種書類</a></li>	
+     </ul>
+    </nav>
+  </div>
+</div>
+-->
+<!--item-->
+	<!--
+<div class="item">
+<!--ここから署名--><!--
+<div class="item signature700">
+ <div class="signature">
+ <img src="img/signature.png" width="220" height="auto" alt=""/>
+  <div class="text">
+    <p class="ad">
+	 <a href="about.html#access">
+	  <span class="ad1">〒123-4567</span><br>
+      <span class="ad2">宮城県柴田郡柴田町</span><br>
+	  <span class="ad2">一目千本桜町3-9</span>
+	 </a>
+	</p>
+    <p class="tel">
+	 <a href="tel:1234-56-7890">TEL 1234-56-7890<br><span class="recept">(平日8：30～17：30)</span></a></p>
+	<p class="copy">©2020higumaYOUCHIEN.<br><a href="#">個人情報保護方針</a></p>
+  </div>
+ </div>
+ </div>-->
+<!--ここまで署名-->
+<!--</div><!--item-->		
+<!--</div><!--container-->
+<!--</div><!--footer_nav_700-->
+<!--</div><!--footer_nav_all-->
+<!--ここからフッター＿ナビ(700)-->
+<!--ここから署名-->
+<div class="signaturepc">
+<div class="item">
+ <div class="signature ">
+ <img src="img/signature.png" width="220" height="auto" alt=""/>
+  <div class="text">
+    <p class="ad">
+	 <a href="about.html#access">
+	  <span class="ad1">〒123-4567</span><br>
+      <span class="ad2">宮城県柴田郡柴田町</span><br>
+	  <span class="ad2">一目千本桜町3-9</span>
+	 </a>
+	</p>
+    <p class="tel">
+	 <a href="tel:1234-56-7890">TEL 1234-56-7890<br><span class="recept">(平日8：30～17：30)</span></a></p>
+	<p class="copy">©2020higumaYOUCHIEN.<br><a href="#">個人情報保護方針</a></p>
+  </div>
+ </div>
+ </div>
+ </div>
+<!--ここまで署名-->
+	
+<!--ここからフッター＿ナビ(pc)-->
+<div class="footer_nav_pc">
+<div class="footer_nav_all">
+
+  <div class="footer_nav">
+    <p class="title"><a href="index.html">HOME</a></p>
+    <nav>
+      <ul>
+       <li><a href="index.html#news">お知らせ</a></li>
+       <li><a href="index.html#philosophy">保育理念</a></li>
+       <li><a href="index.html#greeting">あいさつ</a></li>
+      </ul>
+    </nav>
+  </div>
+   
+  <div class="footer_nav">
+    <p class="title"><a href="life.html">園での生活</a></p>
+    <nav>
+      <ul>
+       <li><a href="life.html#day">園の一日</a></li>
+       <li><a href="life.html#lunch">給食</a></li>
+	   <li><a href="life.html#year">年間行事</a></li>
+      </ul>
+    </nav>
+  </div>
+	  
+  <div class="footer_nav">
+    <p class="title"><a href="time.html">保育時間</a></p>
+    <nav>
+     <ul>
+	  <li><a href="time.html#normal">通常保育</a></li>
+      <li><a href="time.html#extention">預かり保育</a></li>
+     </ul>
+    </nav>
+  </div>
+
+  <div class="footer_nav">
+    <p class="title"><a href="admission.html">入園案内</a></p>
+    <nav>
+     <ul>
+      <li><a href="admission.html#admission">入園のご案内</a></li>
+      <li><a href="admission.html#visit">見学お申込み</a></li>
+     </ul>
+    </nav>
+  </div>
+    
+  <div class="footer_nav">
+    <p class="title"><a href="about.html">園の概要</a></p>
+    <nav>
+     <ul>
+      <li><a href="about.html#access">アクセス</a></li>
+      <li><a href="about.html#history">園の歴史</a></li>
+      <li><a href="about.html#facility">施設紹介</a></li>	
+     </ul>
+    </nav>
+  </div>
+
+  <div class="footer_nav">
+    <p class="title"><a href="#">その他</a></p>
+    <nav>
+     <ul>
+      <li><a href="question.html#question">よくある質問</a></li>
+      <li><a href="contact.html">お問い合わせ</a></li>
+      <li><a href="document.html">各種書類</a></li>	
+     </ul>
+    </nav>
+  </div>
+</div>
+</div>
+<!--ここまでフッター＿ナビ(pc)-->
+　 </div>
+　</footer>
+ </body>
+</html>

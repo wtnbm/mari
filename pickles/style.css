@@ -1,0 +1,278 @@
+@charset "utf-8";
+/*-------リセット--------*/
+body,h2,h3,h4,p,ul,dl,dd{
+    margin: 0;
+    padding: 0;
+    color:#3c5218;
+}
+main {
+    background-image: url(img/bg_pickles.png);
+    background-size:20%;
+    background-repeat: repeat-y;
+}
+main{
+    display: block;
+}
+img{
+    vertical-align:bottom;
+    border: none;
+}
+ul,li{
+    list-style-type:none;
+}
+p{
+    color:  #293d0c;
+    line-height: 2.3em;
+}
+a{
+    text-decoration:none;
+}
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/*-------全体----------*/
+body{
+    font-family:"游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    width: 960px;
+    margin: 0 auto;    
+}
+.center{
+    width: 400px;
+    margin: 0 auto;
+}
+.center500{
+    width: 500px;
+    margin: 0 auto;
+}
+/*-----ヘッダー-------*/
+.header{
+    position: relative;
+    width: 100%;
+}
+.main_img{
+    margin-top: 31px;
+}
+h1 img{
+    position: absolute;
+      top: 200px;
+      left: 280px;
+    width: 400px;
+    height: auto;
+}
+
+nav{
+    position: fixed;
+    top:0px;
+}
+
+/*------ナビ----------*/
+nav ul{
+    width: 960px;
+    padding: 0px;
+    margin-left: auto;
+}
+
+nav li{
+    float:left;
+    font-size: 80%;
+}
+nav li a{
+    width:191px;
+    height: 35px;
+    padding-top: 17px;
+    color:#f2fa7f;
+    text-align: center;
+    display: block;
+    border-right: 1px solid #808000;
+    background-color:#3c5218;
+}
+nav li a:hover{
+    color: #808000;
+    background-color:#f2fa7f;
+}
+/*--------h2-----------*/
+h2{
+    width: 800px;
+    height: 80px;
+    margin: 90px auto 20px;
+    display: block;
+    text-align: center;
+    border: 2px solid #3c5218;
+    border-radius: 2px;
+}
+
+h2 span{
+    width: 800px;
+    height: 80px;
+    font-family: "游明朝";
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+/*----------h3-------*/
+h3{
+    width: 300px;
+    margin:30px auto 0;
+    padding: 40px 0 20px;
+    text-align: center;
+}
+.separate{
+    content:'';
+    display:block;
+    background:rgba(242, 250, 127,0.5);
+    width: 300px;
+    height: 4px;
+    margin:70px auto 0;
+}
+
+
+/*----------section1_pickles-------*/
+/*--------図-------*/
+.hakkou{
+    width: 350px;
+    height: auto;
+    margin: 30px auto 0;
+}
+/*--------3選-------*/
+.number{
+    font-size: 250%;
+    font-family: "游明朝";
+    font-style: italic;
+}
+.main_text{
+    padding:30px 0 0 20px;
+}
+.pi h4{
+    width: 220px;
+    font-size: 150%;
+    font-family: "游明朝";
+    border-bottom: 2px dotted #addba4;
+}
+.pi .text{
+    padding: 0 0 50px 0;
+}
+
+.number:before{
+    content:'';
+    display:block;
+    background:#f2fcf0;
+    width: 50px;
+    height: 50px;
+    margin-bottom: -50px;
+}
+
+
+/*----------section3_meta-------*/
+.meta ul{
+    width: 330px;
+    margin: 0 auto;
+    padding: 50px 0 0 0;
+    color: #808000;
+}
+.meta li{
+    padding: 5px 0;
+}
+/*----------section4_bin-------*/
+.inner{
+    width: 440px;
+    height: 260px;
+    margin: 0 auto;
+    position: relative;
+    overflow:hidden;
+    background-color: rgba(242, 250, 127,0.5);/*--#f2fa7f--*/
+    padding: 10px;
+}
+.bin .center{
+     margin: 0 auto 30px;
+}
+.bin .photo{
+    float: left;
+}
+
+.bin .text{
+    float: left;
+}
+
+.bin li{
+  width: 130px;
+    font-size: 130%;
+    border-bottom: 2px dashed #f57242;
+    margin-top: 10px;
+}
+
+.bin .text{
+    width: 200px;
+    height: 200px;
+    margin: 20px 0 0 40px;
+}
+
+.btn{
+    width: 198px;
+    height: 41px;
+    border: 1px solid #f57242;
+    text-align: center;
+    padding-top: 7px;
+    font-weight: bold;
+    background-color: #f57242;
+    border-radius: 60px;
+    color:#fff ;
+    position: absolute;
+    bottom: 30px;
+    right: 25px;
+    box-shadow: 0 0 1px 2px #ffc7b3;
+}
+.btn a{
+    color: #fff;
+    padding: 10px 10px;
+}
+.btn a:hover{
+    color: #fff;
+    opacity: 0.6em;
+}
+.ggmap {
+    position: relative;
+    padding-bottom: 10%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+ 
+.ggmap iframe,.ggmap object,.ggmap embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/*--------フッター---------*/
+footer{
+    padding: 30px 0 0 0;
+    width: 100%;
+    height: 100px;
+    background-color:#3c5218;
+}
+footer p{
+    text-align: center;
+
+}
+.footer_nav{
+    font-size: 1em;
+}
+footer .copy{
+    color:  #808000;
+    font-size: 0.8em;
+}
+footer a:link{
+    color: #f2fa7f;
+}
+footer a:visited{
+    color:  #f2fa7f;
+}
+
+footer a:hover{
+    color: #808000;
+}
+
