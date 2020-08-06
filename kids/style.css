@@ -957,6 +957,7 @@ body {
       position: fixed;
       top: 0;
       width: 100%;
+      z-index: 99999999;
   }
 
 .gnav {
@@ -1055,7 +1056,7 @@ body {
 /*アコーディオンが効かなくなる*/
 .outer{
 position: relative;
-z-index: -1;
+
 }
 
 /*効かない*/
@@ -1089,49 +1090,10 @@ header .rainbow {
     margin-left: 0px;
     margin-right: 60px;
 }
-header h1 img {
-}
-
-	
 
 	
 }
 
-@media screen and (max-width:700px){
-/*
-.footer_nav_700 {
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-}
-.footer_nav_700  {
-    margin: 0 auto;
-    width: 100%;
-
-}
-
-.footer_nav_960 {
-    display: none;
-}
-.footer_nav_700 .footer_nav {
-    width: 100px;
-    background-color: rgba(134,85,86,1.00);
-    height: 120px;
-}
-.signature700 {
-    margin: 0 auto;
-    display: block;
-    width: 100%;
-}
-.signaturepc {
-    display: none;
-}
-
-*/
-
-
-
-}
 
 @media screen and (max-width:610px){
 .br_610 {
@@ -1157,8 +1119,4 @@ header h1 img {
     width: 42px;
     background-size: cover;
 }
-}
-
-@media screen and (max-width:575px){
-
 }
